@@ -1,0 +1,22 @@
+{
+  "name": "node-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Thewoong/nodePrj.git"
+  },
+  "keywords": [
+    "nodePrj"
+  ],
+  "author": "khw0944",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Thewoong/nodePrj/issues"
+  },
+  "homepage": "https://github.com/Thewoong/nodePrj#readme"
+}
