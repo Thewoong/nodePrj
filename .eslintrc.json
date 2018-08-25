@@ -1,0 +1,45 @@
+{
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "es6": true,
+        "node": true
+    },
+    "extends": "eslint:recommended",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },        
+        "sourceType": "module"
+    },
+    "rules": {
+        "indent": [
+            "off",
+            "tab"
+        ],
+        "linebreak-style": [
+            "error",
+            "windows"
+        ],
+        "quotes": [
+            "error",
+            "double"
+        ],
+        "semi": [
+            "error",
+            "always"
+        ],
+        "no-var":[
+            "error"
+        ],
+        "no-unused-vars":[
+            "error"
+        ],
+        "prefer-const":[
+            "warn"
+        ],
+        "no-console": [
+            "off"
+        ]
+    }
+}
