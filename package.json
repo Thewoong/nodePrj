@@ -21,6 +21,7 @@
   "homepage": "https://github.com/Thewoong/nodePrj#readme",
   "dependencies": {
     "express": "^4.16.3",
+    "mongoose": "^5.2.9",
     "pug": "^2.0.3"
   }
 }
