@@ -1,25 +1,12 @@
-
-const http = require("http");
-http.createServer((request, response) =>{
-    
-    return request
-        .on("error", (err)=>{
-            console.error(err);
-        })
-        .on("data", (data)=>{
-            console.log(data);
-        })
-        .on("end", () => {
-            response.on("error", (err) => {
-                console.log(err);
-            });
-            response.statusCode = 200;
-            response.setHeader("Content-Type", "text/plain");
-            response.write("asdfasdf\n");
-            response.end("the end");
-        });
-
-
-        
-
-}).listen(8012);
+const express = require('express');
+const path = require('path');
+const app = express();
+const route = require('./route.js');
+app.set('view engine', 'pug'); // (1)
+app.set('views', path.join(__dirname, 'html')); // (2)
+app.use(express.static(path.join(__dirname, 'html')));
+app.use('/', route);
+// 에러 처리 부분
+app.listen(8080, () => {
+    console.log('Express App on port 8080!');
+});

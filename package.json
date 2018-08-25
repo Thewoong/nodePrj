@@ -18,5 +18,9 @@
   "bugs": {
     "url": "https://github.com/Thewoong/nodePrj/issues"
   },
-  "homepage": "https://github.com/Thewoong/nodePrj#readme"
+  "homepage": "https://github.com/Thewoong/nodePrj#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "pug": "^2.0.3"
+  }
 }
